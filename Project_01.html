@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Project1- Shabnam Shokouhi Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        figure {
+            text-align: center;
+            /* Center the image and caption */
+            margin: 0 auto;
+            /* Center the figure itself if needed */
+        }
+
+        figcaption {
+            text-align: center;
+
+            margin-top: 1px;
+            /* Add some space above the caption */
+            font-size: 14px;
+            /* Customize the font size */
+            color: #555;
+            /* Customize the font color */
+        }
+
+        .gif-container .image img {
+            width: 300px;
+            /* Set the desired width */
+            height: 300px;
+            /* Set the desired height */
+            object-fit: cover;
+            /* Ensures the GIFs fit within the dimensions without distortion */
+        }
+
+        .row.gtr-50.gtr-uniform {
+            display: flex;
+            justify-content: center;
+            /* Centers the GIFs horizontally */
+            align-items: center;
+            /* Aligns items in the center vertically if needed */
+            text-align: center;
+            /* Centers text within each gif-container */
+        }
+
+        .gif-container {
+            display: inline-block;
+            /* Allows the containers to sit next to each other */
+            margin: 0 10px;
+            /* Optional: Add some space between the GIFs */
+        }
+
+        .image.fit {
+            display: inline-block;
+            /* Keeps the image and caption inline */
+        }
+
+        .image.fit img {
+            width: 300px;
+            /* Example width; adjust as necessary */
+            height: auto;
+            /* Maintains aspect ratio */
+            margin: 0 auto;
+            /* Centers the image */
+        }
+
+        figcaption {
+            margin-top: 1px;
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+            /* Example caption color */
+        }
+
+        .centered-image {
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: auto;
+        }
+    </style>
+
+
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Header -->
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Home page</a>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <article class="post">
+                <header class="main">
+                    <h2> PhD Thesis: REACTIVE RECOVERY RESPONSES TO TREADMILL-INDUCED PERTURBATIONS DURING SLOPED
+                        WALKING
+                    </h2>
+                </header>
+                <hr />
+                <p><b>Objective & Clinical Implications</b>
+                <p>This project blends engineering and biomechanics to quantify the complex coordination of human
+                    muscles during recovery from trip or slip-like perturbations. Understanding these recovery
+                    mechanisms could help design more targeted fall prevention interventions and inform the development
+                    of assistive devices.<br />
+                <p><b>Phase 1: Experiment design</b>
+                <p>We have a cutting-edge Computer-assisted Rehabilitation Environment (CAREN) lab at the University of
+                    Melbourne—it's truly remarkable! Check it out <a
+                        href="https://research.unimelb.edu.au/facilities/infrastructure/computer-assisted-rehabilitation-environment-caren"
+                        target="_blank">
+                        here.</a></a> CAREN features a moveable platform, a programmable split-belt treadmill, and a
+                    semi-immersive virtual reality environment (Figure 1). I designed an innovative set of experiments
+                    that involved triggering trip and slip-like responses within the natural pattern of walking. By
+                    rapidly decelerating or accelerating one belt of the split-belt treadmill, we were able to simulate
+                    falls in a safe, controlled, and repeatable manner. How cool is that?</p>
+                <p> <b>Challenges: </b>One of the most challenging aspects of the project was automating the entire test
+                    protocol and data
+                    collection process. This included precisely controlling the
+                    treadmill’s speed based on a predetermined profile at specific points during the gait cycle, reading
+                    and
+                    synchronizing data from the motion capture system, calibrating the cameras to the platform’s
+                    reference
+                    frame, and automating the storage of data within the desired time window. These were just a few of
+                    the
+                    countless challenges I encountered and successfully managed during the project’s early stages.</p>
+                <figure class="image main">
+                    <img src="images/CAREN1.png" alt="Project 1 Image" />
+                    <figcaption>Figure 1: CAREN Lab</figcaption>
+                </figure>
+                <p></p><b>Phase 2: Data Collection</b>
+                <p>In the second phase of the project, we recruited 44 healthy young participants and equipped them with
+                    various tools, including infrared-reflective markers (technically not a sensor), surface EMG
+                    electrodes, and IMUs. We had them walk under various conditions, such as on level and sloped
+                    surfaces and while engaging in an interactive VR game. During these tasks, we unexpectedly applied
+                    perturbations to observe their responses. We collected data on their motion, muscle activity, and
+                    ground reaction forces.
+                <p><b>Challenges:</b> Collecting data from multiple sensors simultaneously was tricky, and we had to
+                    troubleshoot and fix some glitches in the CAREN system. Ensuring the safety of the subjects was a
+                    big responsibility, and working long hours with the participants could be tiring, but honestly, this
+                    phase was a lot of fun and really enjoyable. </p>
+                <figure class="image main">
+                    <img src="images/Patient.png" alt="Project 1 Image" style="text-align: center;
+                        " style="width: 200px; height: auto;" />
+                    <figcaption>Figure 2: Left: Subject preparation (infrared-reflective markers and EMG sensors placed
+                        on a subject); Right: A subject performing the experiment</figcaption>
+                </figure>
+
+                <p></p><b>Phase 3: Data Processing</b>
+                <p>Next, I cleaned, filtered, and analyzed the data we collected, focusing on quantifying features like
+                    stability, whole-body angular momentum, muscle forces, and joint reaction loads. Using
+                    musculoskeletal modeling techniques, I aimed to unravel the mechanisms we use to recover from a
+                    fall. The human musculoskeletal system is incredibly complex—it's a multi-linkage, nonlinear, and
+                    mechanically redundant system. Musculoskeletal models typically involve multi-segmented linkages
+                    with muscle-tendon actuators, governed by equations of motion based on classical mechanics, such as
+                    Newtonian and Lagrangian principles. This project allowed me to apply all my knowledge of mechanics,
+                    helping me understand and model the intricacies of the human musculoskeletal system through detailed
+                    modeling and dynamic simulations.
+                </p>
+                <div class="row gtr-50 gtr-uniform" style="text-align: center;">
+                    <div class="gif-container"><span class="image fit"> <img src="images/muscle.png" alt="" />
+                            <figcaption>Hill-type musculotendon model</figcaption>
+                        </span></div>
+                    <div class="gif-container"><span class="image fit"> <img src="images/RD2.gif" alt="" />
+                            <figcaption>Simulated Trip-like reaction</figcaption>
+                        </span></div>
+                </div>
+                <p><b>Challenges:</b> The biggest challenge I faced was dealing with the massive dataset—over 3,000
+                    trials! Processing all that data one by one was impossible, so I developed a computational pipeline
+                    (Figure 3) using MATLAB and Python to batch process all the trials. It was a tough task, but it
+                    taught me a lot about data analysis and programming. </p>
+
+                <p>Another challenge was the mathematical redundancy of the musculoskeletal system. Since the number of
+                    muscles actuating a joint exceeds its degrees of freedom, there are countless muscle combinations
+                    that could produce the necessary joint moments for a given motion. Solving this redundancy and
+                    estimating individual muscle forces became a complex optimization problem. I tackled it using static
+                    optimization and dynamic optimization with direct collocation methods to find the best solution.</p>
+                </p>
+                <figure class="image main">
+                    <img src="images/workflow.png" alt="Project 1 Image" />
+                    <figcaption>Figure 3: Computational pipeline of the project from Data to publication.
+                    </figcaption>
+                </figure>
+
+                <p> </p>
+                <div>
+                    <p></p>
+
+                    <hr>
+                    <p>
+                        <span class="image right">
+                            <img src="images/interview.jpeg" alt="" />
+                        </span>
+                        Throughout my PhD, I delivered over ten presentations at international conferences and lab
+                        demonstrations to investors and industry partners from private and defense sectors, Victoria's
+                        parliament members, and representatives from Google, among others. Our lab was also featured in
+                        a TV program called "The Come Up Starter Kit" on Channel 31. Check it out
+                        <a href="https://ctvplus.org.au/series/the-come-up-starter-kit/" target="_blank">here</a>.
+                    </p>
+                    </hr>
+
+                </div>
+
+            </article>
+
+
+
+
+
+            <!-- Footer -->
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
